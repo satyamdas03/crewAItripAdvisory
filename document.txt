@@ -23,3 +23,22 @@ steps:
         # after this we will have a python environment in which we can work in
     
 After this we can start working on the agents
+
+
+cheat sheet to make a good agent
+-think like a boss. work backwards from the goal and think which employee you need to hire to get the job done.
+-define the captain of the crew who orient the other agents towards the goal.
+-define which experts the captain needs to communicate with and 
+delegate tasks to. build a top down structure of the crew
+
+Goal:
+
+Captain/Manager/Boss:
+
+Employees/Expert to hire:
+
+Notes:
+-Agents should be results driven and have a clear goal in mind
+-Role is their job title
+-Goals should actionable
+-Backstory should be their resume
