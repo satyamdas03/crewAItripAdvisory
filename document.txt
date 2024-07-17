@@ -11,4 +11,7 @@ steps:
         --> there are 2 key components that needed to be set up first one is "tool.poetry" in which we need to define the core components such as the "name", "description"
         --> the other one is the dependencies where we are going to specifically call out which package conversions we need to set up crew
         all of the necessary stuff is written in the project.toml file
+        -->tool.pyright is going to allow us to check python codes for type errors
+        -->tool.ruff is going to check for errors and also styling issues
+        -->build-system is going to poetry version 
     
