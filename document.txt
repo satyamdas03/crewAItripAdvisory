@@ -16,4 +16,9 @@ steps:
         -->build-system is going to poetry version 
 
 2) next step is to open up the terminal and do "poetry install --no-root"
+
+3) poetry env list --> to check the currently used Python version for your Poetry environment with
+
+4) poetry shell --> enter into the poetry environment  
+        # after this we will have a python environment in which we can work in
     
