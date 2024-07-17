@@ -22,3 +22,4 @@ steps:
 4) poetry shell --> enter into the poetry environment  
         # after this we will have a python environment in which we can work in
     
+After this we can start working on the agents
