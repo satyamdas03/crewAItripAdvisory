@@ -8,3 +8,7 @@ steps:
     --> we are gonna have to install poetry  ==> pipx install poetry
     --> before installing poetry, we are gonna need to install pipx ==> use : py -m pip install --user pipx
     --> we have to create our own pyproject.toml file
+        --> there are 2 key components that needed to be set up first one is "tool.poetry" in which we need to define the core components such as the "name", "description"
+        --> the other one is the dependencies where we are going to specifically call out which package conversions we need to set up crew
+        all of the necessary stuff is written in the project.toml file
+    
