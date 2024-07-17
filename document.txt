@@ -31,7 +31,8 @@ cheat sheet to make a good agent
 -define which experts the captain needs to communicate with and 
 delegate tasks to. build a top down structure of the crew
 
-Goal:
+Goal: 
+ -create a 7day itinerary with detailed per-day plans, including budget, packing suggestions, and safety tips
 
 Captain/Manager/Boss:
 
