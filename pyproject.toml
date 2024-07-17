@@ -5,7 +5,7 @@ description = "simple crewai for trip planner"
 authors = ["Satyam Das", "Anshika Gupta"]
 
 [tool.poetry.dependencies]
-python = ">=3.10.0,<3.12"
+python = ">=3.10.0,<3.13"
 crewai = "0.1.24"
 unstructured = "==0.10.25"
 pyowm = "3.3.0"
