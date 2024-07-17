@@ -5,5 +5,5 @@ steps:
     --> we are going to setup our pyproject.toml this is basically going to turn all the requirements of our project into code
     so that we can just run our install script basically to package and build all the necessary dependencies to run our python application
     
-    --> we are gonna have to install poetry 
-    --> before installing poetry, we are gonna need to install pipx
+    --> we are gonna have to install poetry  ==> pipx install poetry
+    --> before installing poetry, we are gonna need to install pipx ==> use : py -m pip install --user pipx
