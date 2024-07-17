@@ -7,3 +7,4 @@ steps:
     
     --> we are gonna have to install poetry  ==> pipx install poetry
     --> before installing poetry, we are gonna need to install pipx ==> use : py -m pip install --user pipx
+    --> we have to create our own pyproject.toml file
