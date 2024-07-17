@@ -35,8 +35,11 @@ Goal:
  -create a 7day itinerary with detailed per-day plans, including budget, packing suggestions, and safety tips
 
 Captain/Manager/Boss:
+ -expert travel agent
 
 Employees/Expert to hire:
+ -city selection expert
+ -local tour guide
 
 Notes:
 -Agents should be results driven and have a clear goal in mind
