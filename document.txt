@@ -14,4 +14,6 @@ steps:
         -->tool.pyright is going to allow us to check python codes for type errors
         -->tool.ruff is going to check for errors and also styling issues
         -->build-system is going to poetry version 
+
+2) next step is to open up the terminal and do "poetry install --no-root"
     
