@@ -15,13 +15,18 @@ class CustomAgents:
 
     def expert_travel_agent(self):
         return Agent(
-            role="Define agent 1 role here",
-            backstory=dedent(f"""Define agent 1 backstory here"""),
-            goal=dedent(f"""Define agent 1 goal here"""),
+            role="Expert Travel Agent",
+            backstory=dedent(f"""
+                             Expert in travel planning and logistics.
+                             I have decades of experience making travel iteneraires.
+                             """),
+            goal=dedent(f"""
+                        Create a 7-day itinerary with detailed per-day plans,
+                        include budget, packing suggestions, and safety tips.
+                        """),
             # tools=[tool_1, tool_2],
-            allow_delegation=False,
             verbose=True,
-            llm=self.OpenAIGPT35,
+            llm=self.OpenAIGPT4,
         )
 
     def city_selection_agent(self):
@@ -32,7 +37,7 @@ class CustomAgents:
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,
-            llm=self.OpenAIGPT35,
+            llm=self.OpenAIGPT4,
         )
     def local_tour_guide(self):
         return Agent(
@@ -42,5 +47,5 @@ class CustomAgents:
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,
-            llm=self.OpenAIGPT35,
+            llm=self.OpenAIGPT4,
         )
