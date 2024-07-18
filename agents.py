@@ -31,9 +31,14 @@ class CustomAgents:
 
     def city_selection_agent(self):
         return Agent(
-            role="Define agent 2 role here",
-            backstory=dedent(f"""Define agent 2 backstory here"""),
-            goal=dedent(f"""Define agent 2 goal here"""),
+            role="City Selection Expert",
+            backstory=dedent(f"""
+                            Expert at analyzing travel data to pick ideal destinations
+                            """),
+            goal=dedent(f""" 
+                        Select the best cities based on weather, season,
+                        prices, and traveler interests
+                        """),
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,
