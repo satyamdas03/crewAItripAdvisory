@@ -46,9 +46,14 @@ class CustomAgents:
         )
     def local_tour_guide(self):
         return Agent(
-            role="Define agent 2 role here",
-            backstory=dedent(f"""Define agent 2 backstory here"""),
-            goal=dedent(f"""Define agent 2 goal here"""),
+            role="Local Tour Guide",
+            backstory=dedent(f"""
+                            Knowledgeable local guide with extensive information
+                             about the city, it's attractions and customs
+                            """),
+            goal=dedent(f"""
+                        Provide the BEST insights about the selected city
+                        """),
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,
