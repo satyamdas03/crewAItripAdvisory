@@ -48,4 +48,7 @@ Notes:
 -Backstory should be their resume
 
 
-5) next step is to define the agents
+5) next step is to define the agents 
+    - expert_travel_agent
+    - city_selection_agent
+    - local_tour_guide
