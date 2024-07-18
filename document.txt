@@ -46,3 +46,6 @@ Notes:
 -Role is their job title
 -Goals should actionable
 -Backstory should be their resume
+
+
+5) next step is to define the agents
