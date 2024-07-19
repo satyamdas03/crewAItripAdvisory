@@ -56,3 +56,8 @@ Notes:
         -now go per agent and filling out what the agent is doing 
         -to save money use GPT3.5
         -if the project gives good results use GPT4
+
+
+6) the next step is creating the tools the agents
+are going to use to formulate the processes and
+everything
