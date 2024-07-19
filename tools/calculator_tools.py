@@ -19,7 +19,7 @@ from langchain.tools import tool
 #define a Pydantic model for the tool's input parameters
 class CalculationInput(BaseModel):
     operation: str = Field(..., description = "The mathematical operation to perform")
-    factor : float = Field(..., description = "A factor by which to multiply the result of the operation..." )
+    factor : float = Field(..., description = "A factor by which to multiply the result of the operation" )
 
 #use the tool decorator with the args_schema parameter pointing to the Pydantic model
 @tool("perform_calculation", args_schema=CalculationInput, return_direct = True)
