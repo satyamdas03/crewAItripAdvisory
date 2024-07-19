@@ -61,6 +61,8 @@ Notes:
 6) the next step is creating the tools the agents
 are going to use to formulate the processes and
 everything
-    # separate folder needs to be created, name : tools 
+    # separate folder needs to be created, name : tools
+        - file names of the tools 
+        {search_tools.py, calculator_tools.py}
     - tool number 1) search tool
     - tool number 2) simple calculator
