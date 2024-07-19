@@ -37,3 +37,4 @@ def perform_calculation(operation : str, factor : float) -> str:
 
     #return the result as a string 
     return f"The result of {operation} multiplied by the {factor} is {result}"
+
