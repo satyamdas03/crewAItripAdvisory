@@ -61,3 +61,6 @@ Notes:
 6) the next step is creating the tools the agents
 are going to use to formulate the processes and
 everything
+    # separate folder needs to be created, name : tools 
+    - tool number 1) search tool
+    - tool number 2) simple calculator
