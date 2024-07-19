@@ -22,3 +22,8 @@ class SearchTools():
         }
         response = requests.request("POST", url, headers=headers, data=payload)
         #check if there is an organic key
+        if 'organic' not in response.json():
+            return "Sorry, I couldn't find anything about that, there could be an error with you serper api"
+        else:
+            results = response.json()['organic']
+            
