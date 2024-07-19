@@ -14,7 +14,7 @@ class SearchTools():
         about a given topic and return relevant results
         """
         top_result_to_return = 4
-        url = "https://google.serper.dev/search"
+        url = "https://google.serper.dev/search"  ##this application goes and makes google searches using api
         payload = json.dumps({"q": query})
         headers = {
             'X-API-KEY' : os.environ['SERPER_API_KEY'],
@@ -26,4 +26,3 @@ class SearchTools():
             return "Sorry, I couldn't find anything about that, there could be an error with you serper api"
         else:
             results = response.json()['organic']
-            
