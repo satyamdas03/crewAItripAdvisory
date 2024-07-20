@@ -107,4 +107,9 @@ key steps for task creation:
             '''), agent = agent)
 
 
-7) compiling every so that the final output can run 
+7) compiling every so that the final output can run
+    -will need to change the inpterpreter
+    -type "poetry shell" in the cli 
+    -copy the url that you get in the place after you click on "enter inpterpreter"
+    
+    -poetry add langchain_openai --> in the cli
