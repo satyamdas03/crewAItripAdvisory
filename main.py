@@ -35,6 +35,7 @@ class TripCrew:
 
     identify_city = tasks.identify_city(
       city_selection_expert,
+      self.origin,
       self.cities,
       self.date_range,
       self.interests
@@ -82,7 +83,7 @@ if __name__ == "__main__":
       What are some of your high level interests and hobbies?
     """))
   
-  trip_crew = TripCrew(location, cities, date_range, interests)
+  trip_crew = TripCrew(origin, cities, date_range, interests)
   result = trip_crew.run()
   print("\n\n########################")
   print("## Here is you Trip Plan")
