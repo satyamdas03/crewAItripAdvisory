@@ -3,6 +3,9 @@ from textwrap import dedent
 from langchain.llms import OpenAI, Ollama
 from langchain_openai import ChatOpenAI
 
+from tools.search_tools import SearchTools
+from tools.calculator_tools import CalculatorTools
+
 
 # This is an example of how to define custom agents.
 # You can define as many agents as you want.
@@ -24,7 +27,10 @@ class TravelAgents:
                         Create a 7-day itinerary with detailed per-day plans,
                         include budget, packing suggestions, and safety tips.
                         """),
-            # tools=[tool_1, tool_2],
+            tools=[
+                SearchTools.search_internet, 
+                CalculatorTools.calculate
+                ],
             verbose=True,
             llm=self.OpenAIGPT4,
         )
