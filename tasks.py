@@ -9,18 +9,22 @@ class CustomTasks:
     def __tip_section(self):
         return "If you do your BEST WORK, I'll give you a $10,000 commission!"
 
-    def task_1_name(self, agent, var1, var2):
+    def plan_itinerary(self, agent, city, travel_dates, interests):
         return Task(
             description=dedent(
                 f"""
-            Do something as part of task 1
-            
-            {self.__tip_section()}
-    
-            Make sure to use the most recent data as possible.
-    
-            Use this variable: {var1}
-            And also this variable: {var2}
+            **Task** : Develop a 7-day Travel Itinerary
+            **Description** : Expand the city guide into a full 7-day travel itinerary with detailed per-day plans, including 
+            weather forecasts, places to eat, packing suggestions, and a budget breakdown. We must suggest actual places to visit, and 
+            actual hotels to stay, and actual restaurants to go to. This itinerary should cover all the aspects of the trip,
+            from arrival to departure, integrating the city guide information with practical travel logistics. 
+
+            **Parameters** :
+            - City : {city}
+            - Trip Date : {travel_dates}
+            - Traveler Interests : {interests}
+
+            **Note** : {self.__tip_section()}
         """
             ),
             agent=agent,
