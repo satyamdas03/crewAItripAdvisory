@@ -6,13 +6,11 @@ authors = ["Satyam Das", "Anshika Gupta"]
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.13"
-crewai = "0.41.0"
-unstructured = "==0.10.25"
-pyowm = "3.3.0"
-tools = "^0.1.9"
+crewai = "^0.11.0"
+unstructured = '==0.10.25'
+pyowm = '3.3.0'
 python-dotenv = "1.0.0"
-langchain = "^0.2.10"
-langchain-openai = "^0.1.17"
+langchain-openai = "^0.0.5"
 
 [tool.pyright]
 useLibraryCodeForTypes = true
