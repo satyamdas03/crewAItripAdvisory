@@ -113,3 +113,32 @@ key steps for task creation:
     -copy the url that you get in the place after you click on "enter inpterpreter"
     
     -poetry add langchain_openai --> in the cli
+
+
+
+
+#### RECEIVED ERROR:
+The error message you're encountering is coming from OpenAI and it indicates that you've reached their rate limit. This means you've made too many requests to their API in a short period of time. Here's a breakdown of the error:
+
+openai.RateLimitError: This is the exception type thrown by the OpenAI library when a rate limit is exceeded.
+Error code: 429: This is the HTTP status code for "Too Many Requests".
+{'error': {...}}: This is the error message details.
+message: "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors." This explains that you've used up your allotted API calls (quota) according to your plan.
+type: 'insufficient_quota' - This clarifies the reason for the error being insufficient quota.
+
+param: None - This indicates there's no specific parameter causing the issue.
+code: 'insufficient_quota' - The error code as a string.
+In simpler terms, your program is making calls to OpenAI's API more frequently than your plan allows. You'll need to address this before continuing.
+
+Here are two possible solutions:
+
+Increase Your Quota: If you have a free plan with OpenAI, it will have a limited quota. You can check your plan and billing details to see if there's an option to upgrade to a higher quota plan.
+Wait and Retry: If you're on a free plan or don't want to upgrade, you can wait for some time before running your program again. OpenAI's rate limits typically reset after a certain period (e.g., hourly or daily).
+I can't provide the specific wait time as it depends on OpenAI's quota limits for your plan.  The docs link in the error message  https://community.openai.com/t/i-keep-getting-an-error-you-exceeded-your-current-quota-please-check-your-plan-and-billing-details-even-though-my-account-has-sufficient-credits/537053 might shed more light on this.
+
+
+
+
+
+
+
