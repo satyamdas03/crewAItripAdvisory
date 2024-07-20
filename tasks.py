@@ -57,12 +57,13 @@ class CustomTasks:
             description=dedent(
                 f"""
                     **Task** : Gather In-depth City Guide Information
-                    **Description** : Compile an in-depth guide of the selected city, gathering information about key attractions, local customs, budgets required to visit certain places and alternate locations to visit if the priority places are not available
+                    **Description** : Compile an in-depth guide of the selected city, gathering information about key attractions, local customs, special events, and daily activity recommendations. Find the best spots to go to, the kind of place only a
+                    local would know. This guide should provide a thorough overview of what the city has to offer, including hidden gems, cultural hotspots, must-visit landmarks, weather forecasts, and high level costs.
 
                     **Parameters** :
-                    - City : {city}
-                    - Travel Date : {travel_dates}
+                    - Cities : {city}
                     - Interests : {interests}
+                    - Travel Date : {travel_dates}
 
                     **Note** : {self.__tip_section()}
                 """
