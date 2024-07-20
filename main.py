@@ -26,31 +26,36 @@ class TripCrew:
     local_tour_guide = agents.local_tour_guide()
 
 
-    identify_task = tasks.identify_task(
-      city_selector_agent,
-      self.origin,
+    plan_itinerary = tasks.plan_itinerary(
+      expert_travel_agent,
       self.cities,
-      self.interests,
-      self.date_range
+      self.date_range,
+      self.interests
     )
-    gather_task = tasks.gather_task(
-      local_expert_agent,
-      self.origin,
-      self.interests,
-      self.date_range
+
+    identify_city = tasks.identify_city(
+      city_selection_expert,
+      self.cities,
+      self.date_range,
+      self.interests
     )
-    plan_task = tasks.plan_task(
-      travel_concierge_agent, 
-      self.origin,
-      self.interests,
-      self.date_range
+
+    gather_city_info = tasks.gather_city_info(
+      local_tour_guide,
+      self.cities,
+      self.date_range,
+      self.interests
     )
 
     crew = Crew(
       agents=[
-        city_selector_agent, local_expert_agent, travel_concierge_agent
+        expert_travel_agent, city_selection_expert, local_tour_guide
       ],
-      tasks=[identify_task, gather_task, plan_task],
+      tasks=[
+        plan_itinerary, 
+        identify_city, 
+        gather_city_info
+      ],
       verbose=True
     )
 
