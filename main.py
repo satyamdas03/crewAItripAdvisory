@@ -1,13 +1,12 @@
 import os
 from crewai import Crew
 from textwrap import dedent
-from agents import CustomAgents
-from tasks import CustomTasks
+from agents import TravelAgents
+from tasks import TravelTasks
 
 
 
 class TripCrew:
-
   def __init__(self, origin, cities, date_range, interests):
     self.cities = cities
     self.origin = origin
@@ -15,12 +14,17 @@ class TripCrew:
     self.date_range = date_range
 
   def run(self):
-    agents = TripAgents()
-    tasks = TripTasks()
+    agents = TravelAgents()
+    tasks = TravelTasks()
 
-    city_selector_agent = agents.city_selection_agent()
-    local_expert_agent = agents.local_expert()
-    travel_concierge_agent = agents.travel_concierge()
+    # city_selector_agent = agents.city_selection_agent()
+    # local_expert_agent = agents.local_expert()
+    # travel_concierge_agent = agents.travel_concierge()
+
+    expert_travel_agent = agents.expert_travel_agent()
+    city_selection_expert = agents.city_selection_agent()
+    local_tour_guide = agents.local_tour_guide()
+
 
     identify_task = tasks.identify_task(
       city_selector_agent,
