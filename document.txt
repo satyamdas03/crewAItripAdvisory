@@ -64,5 +64,44 @@ everything
     # separate folder needs to be created, name : tools
         - file names of the tools 
         {search_tools.py, calculator_tools.py}
-    - tool number 1) search tool
-    - tool number 2) simple calculator
+    - tool number 1) search tool  --> the explanation is written in the code file
+    - tool number 2) simple calculator --> the explanation is written in the code file
+
+
+cheat sheet to make a good agent
+- begin with the end in mind. Identify the specific outcome your tasks are aiming to achieve.
+- break down the outcome into actionable tasks, assigning each task to the appropriate agent.
+- ensure the tasks are descriptive, providing clear instructions and expected deliverables.
+
+goal:
+- develop a detailed itinerary, including city selection, attractions, and practical travel ad 
+
+key steps for task creation:
+    1) Identify the desired outcome : define what success looks like for your project
+        - A detailed 7 day travel itinerary
+
+    2) task breakdown : divide the goal into smaller, manageable tasks that agents can execute.
+        -itinerary Planning : develop a detailed plan for each day of the trip.
+        -city selection : analyze and pick the best cities to visit
+        - local tour guide : find a local expert to provide insights and recommendations
+
+    3) assign tasks to agents : match tasks with agents based on their roles and expertise
+    4) task description template:
+        - use this template as a guide to define each task in your crewAI application.
+        - this template helps ensure that each task is clearly defined, actionable, and aligned with...
+
+        Template:
+        ----------
+        def[task_name](self,agent,[parameters]):
+            return Task(description=dedent(f'''
+            **Task** : [Provide a concise name or summary of the task]
+            **Description** : [detailed description of what the agent is expected to do, including actionable steps]
+
+            **Parameters** :
+            - [Parameter 1] : [Description]
+            - [Parameter 2] : [Description]
+            ... [Add more parameters as needed].
+
+            **Note** : [Optional section for incentives or encouragement for high-quality work]
+
+            '''), agent = agent)
