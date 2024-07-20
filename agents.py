@@ -45,8 +45,7 @@ class TravelAgents:
                         Select the best cities based on weather, season,
                         prices, and traveler interests
                         """),
-            # tools=[tool_1, tool_2],
-            allow_delegation=False,
+            tools=[SearchTools.search_internet],
             verbose=True,
             llm=self.OpenAIGPT4,
         )
@@ -60,8 +59,7 @@ class TravelAgents:
             goal=dedent(f"""
                         Provide the BEST insights about the selected city
                         """),
-            # tools=[tool_1, tool_2],
-            allow_delegation=False,
+            tools=[SearchTools.search_internet],
             verbose=True,
             llm=self.OpenAIGPT4,
         )
