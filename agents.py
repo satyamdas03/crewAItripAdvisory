@@ -33,7 +33,7 @@ class TravelAgents:
                 CalculatorTools.calculate
             ],
             verbose=True,
-            llm=self.OpenAIGPT4,
+            llm=self.OpenAIGPT35,
         )
 
     def city_selection_agent(self):
@@ -48,7 +48,7 @@ class TravelAgents:
                         """),
             tools=[SearchTools.search_internet],
             verbose=True,
-            llm=self.OpenAIGPT4,
+            llm=self.OpenAIGPT35,
         )
         
     def local_tour_guide(self):
@@ -63,7 +63,7 @@ class TravelAgents:
                         """),
             tools=[SearchTools.search_internet],
             verbose=True,
-            llm=self.OpenAIGPT4,
+            llm=self.OpenAIGPT35,
         )
 
 # Usage
