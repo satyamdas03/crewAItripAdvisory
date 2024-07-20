@@ -51,3 +51,21 @@ class CustomTasks:
             ),
             agent=agent,
         )
+    
+    def gather_city_info(self, agent, city, travel_dates, interests):
+        return Task(
+            description=dedent(
+                f"""
+                    **Task** : Gather In-depth City Guide Information
+                    **Description** : Compile an in-depth guide of the selected city, gathering information about key attractions, local customs, budgets required to visit certain places and alternate locations to visit if the priority places are not available
+
+                    **Parameters** :
+                    - City : {city}
+                    - Travel Date : {travel_dates}
+                    - Interests : {interests}
+
+                    **Note** : {self.__tip_section()}
+                """
+            ),
+            agent=agent,
+        )
